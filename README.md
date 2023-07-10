@@ -19,7 +19,11 @@ The implementation of a simplified bank account management, the Account class is
 - Java 17
 - Spring boot 3
 - Axon framework
-
+- Jpa + Hibernate for data persistence
+- database : H2 for dev and test environment (light) and Postgres for prod environment
+- MapStruct : mapping between Dtos and java objects
+- Lombok : minimizing boilerplate code (constructors, getters and setters...)
+- 
 ## Technical architecture
 Event sourcing with CQRS(Command Query Responsibility Segregation) :
 CQRS is implemented by a separation of responsibilities between commands and queries, and event sourcing is implemented by using the sequence of events to track changes in data.
